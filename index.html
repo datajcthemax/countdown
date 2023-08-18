@@ -7,16 +7,64 @@
     <title>Count Down</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=64e239ea9120040c1b255c8bde445fcd"></script>
+
+
 </head>
 <body>
     <h1 class="title">이안이 돌잔치 카운트다운</h1>
-    <img src="IMG_0645.JPG" alt="가족사진" class="backgroundpic">
-    <h1>목표 날짜까지 남은 시간:</h1>
+    <div class="carousel">
+        <div class="carousel-images">
+            <img src="0CFA9CB4-1EC6-4D9A-B7A2-E8D0A1818EF0.JPG" alt="사진 1" class="active">
+            <img src="은경이보정샷.jpeg" alt="사진 2">
+            <img src="1DBA00AC-76F3-4C44-9EB4-151929D6A05A.JPG" alt="사진 3">
+            <img src="1EE4FD1E-7BBF-4B43-921B-2F37DB669167.JPG" alt="사진 4">
+            <img src="7C0AA362-C4A8-4D07-8004-5A0AA6F9DA6E.JPG" alt="사진 5">
+            <img src="8B7E09C1-BFE1-4D1F-B25F-A4D370C5F5E5.JPG" alt="사진 6">
+            <img src="20B9C87D-6CFF-4B37-AD14-CC48B533D045.JPG" alt="사진 7">
+            <img src="27C2922E-8C26-4D2C-A894-E48059327D35.JPG" alt="사진 8">
+            <img src="보정샷.jpeg" alt="사진 9">
+            <img src="65AEAC45-D4A7-436E-AF4B-69955898533B.JPG" alt="사진 10">
+            <img src="98D762A1-19A2-4CBD-9DC3-D3045E587060.JPG" alt="사진 11">
+            <img src="0807E26D-D7D0-49C1-8DEA-EDD8D34697D1.JPG" alt="사진 12">
+            <img src="969DD4A2-3167-4D73-8307-01A2A7D28959.JPG" alt="사진 13">
+            <img src="3705431B-37E5-4211-97D3-270EB74E6771.JPG" alt="사진 14">
+            <img src="20220831_120346.jpg" alt="사진 15">
+            <img src="20220831_120327.jpg" alt="사진 16">
+            <img src="20220901_062237.jpg" alt="사진 17">
+            <img src="20220916_123220.jpg" alt="사진 18">
+            <img src="20220918_145537_01.jpg" alt="사진 19">
+            <img src="20220927_072815.jpg" alt="사진 20">
+            <img src="20221003_184316.jpg" alt="사진 21">
+            <img src="20221029_165411.jpg" alt="사진 22">
+            <img src="F446396D-9ABC-492D-91B6-C4D9DCB8BAA7.JPG" alt="사진 23">
+            <img src="20221215_231942.jpg" alt="사진 24">
+            <img src="20221227_212623.jpg" alt="사진 25">
+            <img src="20230103_204019.jpg" alt="사진 26">
+            <img src="20230206_201754.jpg" alt="사진 27">
+            <img src="20230206_225746.jpg" alt="사진 28">
+            <img src="A458D0B5-E2D4-4AE2-B7F6-7966E8AFB4A6.JPG" alt="사진 29">
+            <img src="IMG_0645.JPG" alt="사진 30">
+
+            <!-- 추가 이미지를 여기에 추가하세요. -->
+        </div>
+        <button class="prev">◀</button>
+        <button class="next">▶</button>
+    </div>    <h1>목표 날짜까지 남은 시간:</h1>
     <div id="countdown">
         <span id="days">0</span>일 
         <span id="hours">0</span>시간 
         <span id="minutes">0</span>분 
         <span id="seconds">0</span>초
+    </div>
+    <div>
+        <h3>오시는길</h3>
+        <p>조아인스튜디오</p>
+        <p>경기 용인시 처인구 모현읍 문형동림로 189 (우)16888
+            지번모현읍 동림리 314</p>
+        
+        <!-- 지도를 표시할 div 요소 -->
+        <div id="map"></div>
     </div>
 </body>
 </html>
